@@ -1,49 +1,46 @@
 <template>
   <div class="mx-auto">
-    <div class="flex flex-row mb-24 items-center">
-
-      <div class="flex-auto items-center">
-        <div class="text-center text-5xl font-extrabold leading-none tracking-tight">
+    <div class="flex justify-around items-center mb-24">
+      <div class="flex flex-col justify-start">
+        <div class="mb-3 text-left text-5xl font-extrabold leading-none tracking-tight">
           <span
             class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500"
           >teleport</span>
         </div>
-        <h5>A super simplified Rest client for H U M A N S</h5>
-      </div>
-       <div class="flex-auto items-end">
-         <img :src="herobanner" />
-      </div>
-
-
-
-    </div>
-
-
-    <div class="flex flex-row mb-32 justify-center">
-      <div class="items-center">
-        <button
-          class="p-5 getstartedbtn rounded-md py-3 px-8"
-          v-on:click="goto('https://teleportz.herokuapp.com/')"
-        >Get Started</button>
-      </div>
-      <div class="items-center">
-        <button
-          class="p-5 githubbtn rounded-md py-3 px-8"
-          v-on:click="goto('https://github.com/Rajdeepc/teleport')"
-        >Github</button>
-      </div>
-    </div>
-    <div class="rounded-t-lg overflow-hidden shadow-2xl">
-      <img :src="bannerImg" />
-    </div>
-    <div class="subscribe">
-      <h3>Keep yourself updated with new feature releases.</h3>
-      <div class="flex flex-row">
-        <div>
-          <input type="email" placeholder="Your Email Address.." />
+        <h5 class="mb-8 text-left">A super simplified Rest client for H U M A N S</h5>
+        <div class="flex flex-row justify-between">
+          <div class="items-start w-full">
+            <button
+              class="p-5 getstartedbtn rounded-md py-3 px-8 w-full"
+              v-on:click="goto('https://teleportz.herokuapp.com/')"
+            >Get Started</button>
+          </div>
+          <div class="items-start w-full">
+            <button
+              class="p-5 githubbtn rounded-md py-3 px-8 w-full"
+              v-on:click="goto('https://github.com/Rajdeepc/teleport')"
+            >Github</button>
+          </div>
         </div>
-        <div>
-          <button class="p-5 getstartedbtn rounded-md py-3 px-8">Subscribe</button>
+      </div>
+      <div>
+        <img :src="herobanner" />
+      </div>
+    </div>
+
+    <div class="container mx-auto">
+      <div class="rounded-t-lg overflow-hidden shadow-2xl mb-64">
+        <img :src="bannerImg" />
+      </div>
+      <div class="subscribe">
+        <p class="mb-8">Keep yourself updated with new feature releases.</p>
+        <div class="flex flex-row justify-center items-center">
+          <div>
+            <input type="email" placeholder="Your Email Address.." />
+          </div>
+          <div>
+            <button class="p-5 getstartedbtn rounded-md py-3 px-8">Subscribe</button>
+          </div>
         </div>
       </div>
     </div>
@@ -58,7 +55,7 @@ export default {
   data() {
     return {
       bannerImg,
-      herobanner
+      herobanner,
     };
   },
   props: {
@@ -96,11 +93,10 @@ a {
   background: gray;
   color: white;
 }
-.backbanner{
-  background: url('../assets/images/herobanner.png');
-      height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+.backbanner {
+  background: url("../assets/images/herobanner.png");
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 </style>
