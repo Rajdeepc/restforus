@@ -6,6 +6,9 @@ module.exports = {
       },
       fontSize: {
         'lg': '8rem'
+      },
+      colors: {
+        indigo: '#5c6ac4',
       }
     }
   }

@@ -90,18 +90,20 @@
       <div class="subscribe">
           <p class="text-5xl">Subscribe</p>
           <p class="mb-8">Keep yourself updated with new feature releases.</p>
-          <div class="flex flex-row justify-center items-center">
+          <div class="flex flex-row justify-center items-center mb-4">
             <div>
               <input
                 type="email"
                 class="border-gray-400 border-solid p-3 border"
                 placeholder="Your Email Address.."
               />
+              
             </div>
             <div>
-              <button class="p-5 getstartedbtn rounded-md py-3 px-8">Subscribe</button>
+              <button class="p-5 getstartedbtn rounded-md py-3 px-8" v-on:click="onClickSubscribed">Subscribe</button>
             </div>
           </div>
+          <p v-if="isSubscribed" class="indigo">Thank you for subscribing.</p>
         </div>
       
   
@@ -155,6 +157,7 @@ export default {
       content4,
       content5,
       content6,
+      isSubscribed:false
     };
   },
   props: {
@@ -164,6 +167,9 @@ export default {
     goto: function (params) {
       window.open(params, "_blank");
     },
+    onClickSubscribed: function() {
+      this.isSubscribed = true
+    }
   },
 };
 </script>
