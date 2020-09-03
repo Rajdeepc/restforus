@@ -4,5 +4,8 @@ module.exports = {
       container: {
         center: true,
       },
-    },
+      fontSize: {
+        'lg': '8rem'
+      }
+    }
   }
