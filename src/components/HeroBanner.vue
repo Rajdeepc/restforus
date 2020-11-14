@@ -5,20 +5,20 @@
         <div class="mb-3 text-left font-extrabold leading-none tracking-tight">
           <span
             class="text-lg bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500"
-          >teleport</span>
+          >Pegasus</span>
         </div>
         <h5 class="mb-8 text-left">A simplified Rest client designed for H U M A N S</h5>
         <div class="flex flex-row justify-between">
           <div class="items-start w-full mr-5">
             <button
               class="p-5 getstartedbtn rounded-md py-3 px-8 w-full"
-              v-on:click="goto('https://teleportz.herokuapp.com/')"
+              v-on:click="goto('https://Pegasusz.herokuapp.com/')"
             >Get Started</button>
           </div>
           <div class="items-start w-full">
             <button
               class="p-5 githubbtn rounded-md py-3 px-8 w-full"
-              v-on:click="goto('https://github.com/Rajdeepc/teleport')"
+              v-on:click="goto('https://github.com/Rajdeepc/Pegasus')"
             >Github</button>
           </div>
         </div>

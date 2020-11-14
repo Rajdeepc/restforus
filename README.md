@@ -1,4 +1,4 @@
-# teleport
+# Pegasus
 
 ## Project setup
 ```
