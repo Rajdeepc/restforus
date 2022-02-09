@@ -1,5 +1,6 @@
 {
-  "name": "Pegasus",
+  "homepage":"https://Rajdeepc.github.io/restforus",
+  "name": "Restforus",
   "version": "0.1.0",
   "private": true,
   "scripts": {
